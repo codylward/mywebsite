@@ -1,0 +1,182 @@
+/* --- Reset & Basics --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: #f4f4f4;
+  background-color: #0f1116;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* --- Header / Hero --- */
+.hero {
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-btn {
+  color: #fff;
+  border: 1px solid #00bcd4;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background: #00bcd4;
+  color: #111;
+}
+
+.hero-content {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero-content h2 span {
+  color: #00bcd4;
+}
+
+.hero-content p {
+  margin: 1rem auto;
+  max-width: 600px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  background: #00bcd4;
+  color: #111;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00a0b5;
+}
+
+/* --- About Section --- */
+.about {
+  padding: 5rem 0;
+  background-color: #181a20;
+}
+
+.about h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* --- Services Section --- */
+.services {
+  background-color: #111317;
+  padding: 5rem 0;
+}
+
+.services h2 {
+  color: #00bcd4;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #1c1f25;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #bbb;
+}
+
+/* --- Contact Section --- */
+.contact {
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+  padding: 5rem 0;
+}
+
+.contact h2 {
+  color: #00bcd4;
+}
+
+.contact p {
+  margin: 1rem 0 2rem;
+  color: #ccc;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #0b0c10;
+  text-align: center;
+  padding: 1rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}
