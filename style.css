@@ -193,4 +193,8 @@ footer {
   .hero-content h2 {
     font-size: 2rem;
   }
+
+  .showcase-img {
+    max-width: 100%; /* Make image full-width on mobile */
+  }
 }
