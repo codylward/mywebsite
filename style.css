@@ -22,7 +22,7 @@ body {
 /* --- Header / Hero --- */
 .hero {
   background: linear-gradient(to bottom right, #1f2937, #111827);
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,7 +91,7 @@ body {
 
 /* --- About Section --- */
 .about {
-  padding: 5rem 0;
+  padding: 2rem 0;
   background-color: #181a20;
 }
 
@@ -143,6 +143,20 @@ body {
 
 .card p {
   color: #bbb;
+}
+
+/* --- Showcase Image Section (NEW) --- */
+.showcase {
+  background-color: #181a20; /* Matches the 'about' section bg */
+  padding-bottom: 5rem; /* Creates space before the 'about' section */
+}
+
+.showcase-img {
+  max-width: 70%; /* Ensures the image is never wider than its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  border-radius: 10px; /* Optional: Matches the border-radius from your cards */
+  display: block; /* Fixes potential extra spacing issues */
+  margin: 0 auto; /* Ensures it's centered if container is wider */
 }
 
 /* --- Contact Section --- */
